@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Мотиватор</title>
         <link rel="stylesheet" href="./style-min.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
@@ -11,19 +11,24 @@
         />
     </head>
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <div class="nav-bar">
+                <a href="./index.html" class="link">Головна</a>
+                <a href="./true-false.html" class="link">Так чи Ні ?</a>
+            </div>
+        </header>
         <main class="main">
             <div class="container">
                 <div id="lottie-animation"></div>
                 <div class="results-container">
                     <div class="result" id="result">
-                        Загадай питання, та натисни кнопку.
+                        Натисни кнопку та отримай відповідь.
                     </div>
                 </div>
 
                 <div class="actions">
                     <button class="button" id="button">
-                        Натисни на цю кнопку
+                        Тицяй сюди
                     </button>
                 </div>
             </div>
@@ -37,11 +42,11 @@
 
         <script type="text/javascript">
             var animation = bodymovin.loadAnimation({
-                container: document.getElementById("lottie-animation"), // ID вашего div элемента
+                container: document.getElementById("lottie-animation"),
                 renderer: "svg",
                 loop: true,
                 autoplay: true,
-                path: "./Animation-1690215448365.json", // Путь к вашему JSON файлу с анимацией
+                path: "./Animation-1690215448365.json",
             });
         </script>
     </body>

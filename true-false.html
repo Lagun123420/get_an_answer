@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Так чи Ні?</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav-bar">
+                <a href="./index.html" class="link">Головна</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div id="lottie-animation"></div>
+                <div class="results-container">
+                    <div class="result" id="result-1">
+                        Якщо ти сумніваєшся, натисни кнопку.
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="button" id="button-1">
+                        Натисни на цю кнопку
+                    </button>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"
+            type="text/javascript"
+        ></script>
+        <script type="text/javascript">
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById("lottie-animation"),
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "./animation_lkmmnk8h.json",
+            });
+        </script>
+    </body>
+</html>
