@@ -6,33 +6,56 @@
         <title>Мотиватор</title>
         <link rel="stylesheet" href="./style-min.css" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
             rel="stylesheet"
         />
     </head>
-    <body>
-        <header class="header">
+    <body class="loading">
+        <div class="loader">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <header class="header content">
             <div class="nav-bar">
                 <a href="./index.html" class="link">Головна</a>
                 <a href="./true-false.html" class="link">Так чи Ні ?</a>
             </div>
         </header>
-        <main class="main">
+        <main class="main content">
             <div class="container">
                 <div id="lottie-animation"></div>
                 <div class="results-container">
-                    <div class="result" id="result">
-                        Натисни кнопку та отримай відповідь.
+                    <div class="title" id="title">
+                        Натисни кнопку та отримай саме ті слова які тобі
+                        сьогодні так потрібні !
                     </div>
+                    <div class="result" id="result"></div>
                 </div>
 
                 <div class="actions">
-                    <button class="button" id="button">
-                        Тицяй сюди
-                    </button>
+                    <button class="button" id="button">Дізнатися</button>
                 </div>
             </div>
         </main>
+        <script>
+            window.onload = function () {
+                setTimeout(() => {
+                    document.body.className = "loaded";
+                }, 1000);
+            };
+        </script>
 
         <script src="./script-min.js"></script>
         <script
