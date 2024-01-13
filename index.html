@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мотиватор</title>
+    <title>Personal Helper</title>
     <link rel="stylesheet" href="./style-min.css" />
-    <link rel="shortcut icon" href="./sources/logo/LVR-logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./sources/logo/LVR-logo.ico"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,17 +35,46 @@
       </div>
     </div>
     <header class="header content">
-        <div class="logo-container">
-            <img src="./sources/logo/LVR-logo-t.webp" width="40px" alt="logo">
-        </div>
+      <div class="logo-container">
+        <img src="./sources/logo/LVR-logo-t.webp" width="40px" alt="logo" />
+      </div>
       <div class="nav-bar">
         <a href="./index.html" class="link" data-i18n="home">Головна</a>
-        <a href="./true-false.html" class="link" data-i18n="yes_no">Так чи Ні ?</a>
+        <a href="./true-false.html" class="link" data-i18n="yes_no"
+          >Так чи Ні ?</a
+        >
       </div>
       <div class="actions">
-        <button class="button changeLang" id="languageToggle">
-          <img src="" alt="language_icon" id="languageIcon">
+        <!-- <button class="button changeLang" id="languageToggle">
+          <img src="" alt="language_icon" id="languageIcon" />
+        </button> -->
+        <button class="button" id="openPopupLang">
+          <img
+            src="./sources/icons/languages.webp"
+            alt="language_icon"
+          />
         </button>
+      </div>
+      <div class="popup_lang" id="popupLang">
+        <div class="menu-lang">
+          <div class="list-lang">
+            <button class="button changeLang" data-lang="uk">
+              <img
+                src="./sources/icons/free-icon-ukraine-330540.webp"
+                alt="langs"
+              />
+            </button>
+            <button class="button changeLang" data-lang="en">
+              <img
+                src="./sources/icons/free-icon-united-kingdom-555417.webp"
+                alt="langs"
+              />
+            </button>
+            <button class="button changeLang" data-lang="pl">
+              <img src="./sources/icons/poland.webp" alt="langs"/>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main content">
@@ -56,7 +89,9 @@
         </div>
 
         <div class="actions">
-          <button class="button" id="button" data-i18n="find_out">Дізнатися</button>
+          <button class="button" id="button" data-i18n="find_out">
+            Дізнатися
+          </button>
         </div>
       </div>
     </main>
